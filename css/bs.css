@@ -1,0 +1,479 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+head, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face{
+   font-family:'nice' ;
+   src: url(../fonts/Skate.ttf);
+}
+@font-face{
+   font-family:'regular' ;
+   src: url(../fonts/regular.ttf);
+}
+@font-face{
+   font-family:'italic' ;
+   src: url(../fonts/italic.ttf);
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #805050;
+    border: 1px solid #4e3c3c;
+    border-radius: 0.25rem;
+}
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.bg-light {
+    background-color: #ffffff00!important;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+}
+.navbar-light .navbar-brand {
+    color: #ffec18;
+    font-size: 50px;
+    font-family: nice;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: white;
+}
+
+.navbar-nav li > a{
+	color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    font-family: regular;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #191f4c5c;
+    color: rgb(247 133 133 / 90%);
+    transition: 0.5s;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgb(247 133 133 / 90%);
+}
+#image{
+	background-image:url(../images/marshall-1.jpg) ;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    animation-name: Animation1;
+    animation-iteration-count:infinite ;
+    animation-duration: 8s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+
+.for-animation {
+    text-align: center;
+    margin: 80px 0px;
+    color: white;
+}
+
+.for-animation h3 {
+    font-size: 35px;
+    font-family: italic;
+}
+.for-animation h1 {
+    font-size: 50px;
+    font-family: regular;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+.for-animation button > a {
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.for-animation button {
+    padding: 15px 15px 15px 15px;
+    background-color: #ffba00;
+    color: white;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.for-animation button:hover {
+    background-color: #0000004f;
+}
+
+
+.for-animation button > a:hover {
+    color: #bb9393;
+}
+
+
+.head-text{
+    text-align: center;
+    margin: 30px 0px;    
+}
+.head-text h1{
+    font-size: 35px;
+    font-family: regular;
+}
+.head-text p {
+    font-family: italic;
+}
+
+.symbol-text{
+    margin: 50px 0px;
+    text-align: center;
+}
+.symbol-text h3{
+    font-family: regular;
+    font-weight: 600px;
+
+}
+
+.symbols > a{
+    display: inline-block;
+   background-color: #ffba00 ;
+   color: white;
+   font-size: 50px;
+   width: 100px;
+   height:100px;
+   border-radius: 150%;
+   position: relative;
+   transition: 1s;
+}
+.symbols a > i{
+   position: absolute;
+   top: 50%;
+   height: 50%;
+   transform: translate(-50%, -50% );
+}
+.symbols > a:hover{
+    background-color: white;
+    color: #34c072;
+}
+.symbol-text p {
+    font-family: italic;
+    font-size: 17px;
+}
+
+
+.portfolio{
+	background-color: whitesmoke;
+	margin: 50px 0px;
+	padding-bottom: 50px;
+}
+
+.images-text img{
+    width: 100%;
+    object-fit: cover;
+}
+.images-text{
+    padding: 0px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    border: solid 1px #ffffff00;
+    text-align: center;
+    line-height: 0px;
+    transition: 1.5s;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.images-text > p{
+    line-height: 5px;
+    font-family: italic;
+}
+.images-text > h4{
+    font-family: regular;
+}
+
+
+.images-text > a{
+     color: white;
+      margin: 10px 10px;
+      font-size: 20px;
+      padding: 0px 0px 10px 0px;
+      transition: 1s;
+}
+.images-text:hover{
+    background-color:#ffba00 ;
+}
+.images-text > a:hover{
+    color:rgb(255 85 85) ;
+
+}
+
+.flex {
+    display: flex;
+    margin-right: 35px;
+}
+
+.text-style h3, h2{
+    margin: 0px;
+    text-align: right;
+    margin-right: 15px;
+    padding: 0px 0px 0px 0px;
+}
+
+.text-style p {
+    margin-right: 15px;
+    text-align: right;
+    font-family: italic;
+}
+
+
+.round-images > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid #dbcccc;
+}
+
+
+
+
+.flex-2 {
+    display: flex;
+    margin-left: 30px;
+}
+
+.round-images-2 > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid #dbcccc;
+}
+
+
+.text-style-2 h3{
+    margin: 0px;
+    text-align: left;
+    margin-left: 15px;
+    padding: 0px 0px 0px 0px;
+}
+.text-style-2 h2{
+    margin: 0px;
+    text-align: left;
+    margin-left: 15px;
+    padding: 0px 0px 0px 0px;
+}
+
+.text-style-2 p {
+    margin-left: 15px;
+    text-align: left;
+    font-family: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@KeyFrames Animation1{
+    0%{
+    background-image: url(../images/dead2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+.container {
+    max-width: 1450px;
+}
+}
+
+
+@media screen and (max-width: 992px){
+.images-text > h4 {
+    font-size: initial;
+}
+.images-text > p {
+    font-size: small;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+.round-images > img {
+    height: 100px;
+    width: 100px;
+}
+.round-images-2 > img {
+    height: 100px;
+    width: 100px;
+}
+.text-style p {
+    margin-right: 5px;
+}
+.text-style-2 p {
+    margin-left: 5px;
+}
+.text-style h3, h2 {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.text-style-2 h3 {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.text-style-2 h2 {
+	margin-left: 5px;
+}
+.for-animation h1 {
+    font-size: 35px;
+    line-height: 20px;
+}
+.symbol-text {
+    margin: 20px 0px;
+}
+}
+
+@media screen and (max-width: 580px){
+.text-style-2 p{
+	font-size: small;
+}
+.text-style p{
+	font-size: small;
+}
+}
+
+
+
+@media screen and (max-width: 430px){
+.for-animation h1 {
+    font-size: 20px;
+    line-height: 0px;
+}
+.for-animation h3 {
+    font-size: 28px;
+}
+.for-animation {
+    margin: 50px 0px;
+}
+.for-animation button {
+    padding: 10px 10px 10px 10px;
+    margin-top: 40px;
+}
+}
+
+
+
+
+@media screen and (max-width: 350px){
+.round-images > img {
+    height: 80px;
+    width: 80px;
+}
+.round-images-2 > img {
+    height: 80px;
+    width: 80px;
+}
+.text-style h3, h2 {
+    font-size: small;
+}
+.text-style-2 h3 {
+    font-size: small;
+}
+.for-animation button {
+    margin-top: 25px;
+}
+}
+
+
+
+
+@media screen and (max-width: 310px){
+.navbar-light .navbar-brand {
+    font-size: 35px;
+}
+.for-animation {
+    margin: 10px 0px;
+}
+.for-animation button {
+    margin-top: 25px;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 280px){
+.flex-2 {
+    display: block;
+    margin-left: 0px;
+}
+.flex {
+    display: block;
+    margin-right: 0px;
+}
+.round-images{
+	float: right;
+}
+.for-animation button {
+  margin-top: 15px;
+}
+}
+
+
+
+
+@media screen and (max-width: 268px){
+.for-animation h1 {
+    font-size: 15px;
+}
+}
+
+
+
+@media screen and (max-width: 255px){
+.navbar-toggler {
+    padding: 0.15rem 0.28rem;
+}
+}
